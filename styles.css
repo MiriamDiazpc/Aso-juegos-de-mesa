@@ -1,0 +1,31 @@
+body {
+    background-color: #f9f2e8;
+    background-image: url(images/index.jpeg);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    margin: 0.5% auto;
+    padding: 1%;
+    color: black;
+    font-size: 50px;
+}
+
+.container {
+    width: 36%;
+    font-size: 20px;
+    color: black;
+    border: 3px solid black;
+    border-radius: 5px;
+    margin: 16% 30%;
+    padding: 0;
+    background-color: #f9f6ed;
+}
+
+#biblioteca {
+    justify-items: end;
+}
+

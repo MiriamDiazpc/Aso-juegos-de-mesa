@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="styles.css">
     <title>Inscripción</title>
 </head>
-<body>
+<body class="fondoRegistrate">
   <header>
     <div class="col-md-12">
       <h1>Asociación Juegos de Mesa</h1>
@@ -34,5 +34,43 @@
       </li>
     </ul>
   </header>
+  <form class="registro">
+    <div class="form-group">
+      <label for="name">Nombre o nickname</label>
+      <input type="name" class="form-control" id="eligeNombre" placeholder="Juan el bandido">
+    </div>
+    <div class="form-group">
+      <label for="raza">Raza</label>
+      <input type="text" class="form-control" id="eligeRaza" placeholder="humano, elfo, enano, orco, tiefling, gnomo, celestial, bestia, demonio">
+    </div>
+    <div class="form-group">
+      <label for="clase">Clase</label>
+      <input type="text" class="form-control" id="eligeClase" placeholder="guerrero, clérigo, ladrón, mago, hechicero, bardo, druida, paladín">
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" id="ponEmail" placeholder="name@example.com">
+    </div>
+    <div class="form-group">
+      <label for="password">Contraseña</label>
+      <input type="password" class="form-control" id="creaContraseña" placeholder="Password">
+    </div>
+    <div class="form-group">
+      <label for="select">Elige el color de tu alma</label>
+      <select multiple class="form-control" id="eligeColor">
+        <option>Azul</option>
+        <option>Rojo</option>
+        <option>Amarillo</option>
+        <option>Verde</option>
+        <option>Negro</option>
+        <option>Morado</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Juegos preferidos</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar a mordor</button>
+  </form>
 </body>
 </html>

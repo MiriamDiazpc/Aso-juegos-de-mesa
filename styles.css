@@ -1,4 +1,4 @@
-body {
+.fondoIndex {
     background-color: #f9f2e8;
     background-image: url(images/index.jpeg);
     background-repeat: no-repeat;
@@ -15,17 +15,21 @@ h1 {
 }
 
 .container {
-    width: 36%;
+    width: 32%;
     font-size: 20px;
-    color: black;
+    color: #9ba2aa;
     border: 3px solid black;
     border-radius: 5px;
-    margin: 16% 30%;
+    margin: 18% 30%;
     padding: 0;
     background-color: #f9f6ed;
 }
 
 #biblioteca {
     justify-items: end;
+}
+
+a:hover{
+    color: black;
 }
 

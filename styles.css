@@ -5,6 +5,14 @@
     background-position: center top;
 }
 
+.fondoRegistrate {
+    background-image: url(images/registrate1.jpeg);
+    background-repeat: no-repeat;
+    background-position: center cover;
+    background-size: 250vh;
+    background-color: #FCEECB;
+}
+
 h1 {
     width: 100%;
     text-align: center;
@@ -14,13 +22,19 @@ h1 {
     font-size: 50px;
 }
 
-.container {
+/*----------------------PÁGINA INICIO----------------------*/
+.inscripcion {
+    color: #80b0b1;
+}
+
+.container-inicio {
     width: 32%;
     font-size: 20px;
-    color: #9ba2aa;
+    font-weight: bold;
+    color: #80b0b1;
     border: 3px solid black;
     border-radius: 5px;
-    margin: 18% 30%;
+    margin: 8% 33%;
     padding: 0;
     background-color: #f9f6ed;
 }
@@ -30,6 +44,77 @@ h1 {
 }
 
 a:hover{
-    color: black;
+    color: orange; /*NO REACCIONA*/
 }
 
+/*----------------------PÁGINA REGISTRO----------------------*/
+.inscripcion {
+    color: #121250;
+    margin-top: 3%;
+}
+
+.menu-registro {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 12%;
+    margin-top: 2%;
+    color: 	#191970;
+}
+
+.registro {
+    margin: 2% 40%;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: #f4e2bca1;
+    font-weight: bold;
+}
+
+.form-group {
+    padding: 1%;
+    margin: 3%;
+}
+
+option {
+    text-align: center;
+    padding: 2%;
+    cursor: pointer;
+}
+
+.opt1:hover {
+    background-color: #80d4df;
+}
+
+.opt2:hover {
+    background-color: #cd5c5c;
+    color: #f9f6ed;
+}
+
+.opt3:hover {
+    background-color: #fde458;
+}
+
+.opt4:hover {
+    background-color: #3c883c;
+    color: #f9f6ed;
+}
+
+.opt5:hover {
+    background-color: #714f92;
+    color: #f9f6ed;
+}
+
+#eligeColor::-webkit-scrollbar {
+    width: 10px;
+    background-color: #FCEECB;
+}
+
+#eligeColor::-webkit-scrollbar-thumb {
+    background-color: #eeb77d;
+    border-radius: 5px;
+}
+
+.btn-registro {
+    margin: 3% 33%;
+    border-radius: 5px;
+    background-color: #d27a5c;
+}

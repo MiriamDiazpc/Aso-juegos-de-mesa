@@ -56,7 +56,7 @@ a {
     background-size: cover; 
 }
 
-.inscripcion {
+.h1Registrate {
     color: var(--color-white);
     padding: 2%;
     text-align: left;
@@ -142,7 +142,26 @@ option {
 }
 
 .h1MesasJuego {
-    color: ;
+    color: var(--color-white);
+    padding: 2%;
+    margin-left: 3%;
+    text-align: left;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+#menuMesasJuego {
+    font-size: 25px;
+    font-weight: bold;
+    color: 	var(--color-grey);
+    border: 3px var(--color-darkBrown) solid;
+    text-align: center;
+    background-color: #fefce691;
+    padding: 1%;
+}
+
+#menuMesasJuego a{
+    color: var(--color-darkBrown);
 }
 
 .bodyMesasJuego {
@@ -173,9 +192,17 @@ option {
 .item {
     margin: 80px; 
     padding: 70px;
-    background-color: #f2f2f2;
-    border: 1px solid #ddd;
+    background-color: #fefce6a2;
+    border: 6px solid var(--color-darkBrown);
     border-radius: 50%;
     font-size: 30px;
     font-weight: bold;
+}
+
+.item:hover{
+    background-color: #d99d4a56;
+}
+
+.item a:hover{
+    color: var(--color-white);
 }

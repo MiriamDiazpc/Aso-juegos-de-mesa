@@ -1,64 +1,77 @@
-.fondoIndex {
-    background-color: #f9f2e8;
-    background-image: url(images/index.jpeg);
-    background-repeat: no-repeat;
-    background-position: center top;
+:root {
+    --color-darkBrown: #5d2c20;
+    --color-yellow: #d99d4a;
+    --color-red: #d27a5c;
+    --color-white:#fefce6; 
+    --color-grey: #323636;
 }
 
-.fondoRegistrate {
-    background-image: url(images/registrate1.jpeg);
-    background-repeat: no-repeat;
-    background-position: center cover;
-    background-size: 250vh;
-    background-color: #FCEECB;
-}
-
-h1 {
-    width: 100%;
-    text-align: center;
-    margin: 0.5% auto;
-    padding: 1%;
-    color: black;
-    font-size: 50px;
+a {
+    text-decoration: none;
+    color: #5d2c20;
 }
 
 /*----------------------PÁGINA INICIO----------------------*/
-.inscripcion {
-    color: #80b0b1;
+.fondoIndex {
+    background-color: #f9f2e8;
+    background-image: url(images/fondoInicio.jpeg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+.h1Index {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    color: #fefce6;
+    font-size: 50px;
 }
 
 .container-inicio {
     width: 32%;
     font-size: 20px;
     font-weight: bold;
-    color: #80b0b1;
+    color: #342422;
     border: 3px solid black;
     border-radius: 5px;
-    margin: 8% 33%;
+    margin: 16% 33%;
     padding: 0;
-    background-color: #f9f6ed;
+    background-color: #fffde5e5;
+}
+
+.container-inicio a:hover {
+    color: #d99d4a;
 }
 
 #biblioteca {
     justify-items: end;
 }
 
-a:hover{
-    color: orange; /*NO REACCIONA*/
+/*----------------------PÁGINA REGISTRO----------------------*/
+.fondoRegistrate {
+    background-image: url(images/fondoRegistro.jpeg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover; 
 }
 
-/*----------------------PÁGINA REGISTRO----------------------*/
 .inscripcion {
-    color: #121250;
-    margin-top: 3%;
+    color: var(--color-white);
+    padding: 2%;
+    text-align: left;
+    font-weight: bold;
+    font-size: 50px;
 }
 
 .menu-registro {
     font-size: 25px;
     font-weight: bold;
-    margin-left: 12%;
-    margin-top: 2%;
-    color: 	#191970;
+    color: 	var(--color-grey);
+    border: 3px #a87343 solid;
+    text-align: center;
+    background-color: #f9ead398;
+    padding: 1%;
 }
 
 .registro {
@@ -81,25 +94,25 @@ option {
 }
 
 .opt1:hover {
-    background-color: #80d4df;
+    background-color: #66a7afbd;
 }
 
 .opt2:hover {
-    background-color: #cd5c5c;
+    background-color: var(--color-red);
     color: #f9f6ed;
 }
 
 .opt3:hover {
-    background-color: #fde458;
+    background-color: var(--color-yellow);
 }
 
 .opt4:hover {
-    background-color: #3c883c;
+    background-color: #327432be;
     color: #f9f6ed;
 }
 
 .opt5:hover {
-    background-color: #714f92;
+    background-color: #573d70c7;
     color: #f9f6ed;
 }
 
@@ -117,4 +130,52 @@ option {
     margin: 3% 33%;
     border-radius: 5px;
     background-color: #d27a5c;
+}
+
+/*----------------------MESAS DE JUEGO----------------------*/
+.fondoMesasJuego{
+    background-image: url(images/fondoMesasJuego.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #443f41;
+}
+
+.h1MesasJuego {
+    color: ;
+}
+
+.bodyMesasJuego {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%; 
+}
+
+.left, .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    margin: 80px; 
+    padding: 70px;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: bold;
 }

@@ -11,6 +11,11 @@ a {
     color: #5d2c20;
 }
 
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
 /*----------------------PÁGINA INICIO----------------------*/
 .fondoIndex {
     background-color: #f9f2e8;
@@ -25,7 +30,6 @@ a {
     text-align: center;
     margin: auto;
     color: #fefce6;
-    font-size: 50px;
 }
 
 .container-inicio {
@@ -41,7 +45,7 @@ a {
 }
 
 .container-inicio a:hover {
-    color: #d99d4a;
+    color: var(--color-yellow);
 }
 
 #biblioteca {
@@ -60,11 +64,9 @@ a {
     color: var(--color-white);
     padding: 2%;
     text-align: left;
-    font-weight: bold;
-    font-size: 50px;
 }
 
-.menu-registro {
+.menuRegistro {
     font-size: 25px;
     font-weight: bold;
     color: 	var(--color-grey);
@@ -146,11 +148,9 @@ option {
     padding: 2%;
     margin-left: 3%;
     text-align: left;
-    font-weight: bold;
-    font-size: 50px;
 }
 
-#menuMesasJuego {
+.menuMesasJuego {
     font-size: 25px;
     font-weight: bold;
     color: 	var(--color-grey);
@@ -160,21 +160,15 @@ option {
     padding: 1%;
 }
 
-#menuMesasJuego a{
+.menuMesasJuego a{
     color: var(--color-darkBrown);
 }
 
-.bodyMesasJuego {
+.containerMesas {
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.container {
-    display: flex;
-    justify-content: space-between;
-    width: 80%; 
 }
 
 .left, .right {
@@ -205,4 +199,49 @@ option {
 
 .item a:hover{
     color: var(--color-white);
+}
+
+/*----------------------TU BIBLIOTECA----------------------*/
+.fondoBiblioteca {
+    background-image: url(images/fondoBiblioteca.jpeg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+.h1Biblioteca {
+    color: var(--color-white);
+    text-align: center;
+    margin: 3%;
+}
+
+.menuBiblioteca {
+    color: var(--color-white);
+}
+
+/*----------------------RESERVA MESA----------------------*/
+.fondoReservaMesa {
+    background-image: url(images/fondoReservaMesa.jpeg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+.reservaMesa {
+    margin: 2% 40%;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: #f4e2bca1;
+    font-weight: bold;
+}
+
+.form-group {
+    padding: 1%;
+    margin: 3%;
+}
+
+option {
+    text-align: center;
+    padding: 2%;
+    cursor: pointer;
 }

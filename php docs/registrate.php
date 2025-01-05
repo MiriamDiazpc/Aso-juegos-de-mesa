@@ -1,3 +1,25 @@
+<?php
+    include('db.php'); /*Acceso a la BBDD*/
+    $message = '';
+
+    if($_SERVER['REQUEST_METHOD']=== 'POST'){
+        $username = $_POST['username'];
+        $email = $_POST['email'];
+        $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
+
+        $stmt = $conn->prepare("INSERT INTO users (username, email, password) VALUES (?,?,?)");
+        $stmt -> bind_param("sss", $username, $email, $password);
+
+        if($stmt->execute()){
+            $message = "Usuario registrado con éxito";
+        } else {
+            $message = "Error ".$conn->error;
+        }
+
+        $stmt->close();
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -29,7 +51,7 @@
         <div class="col">
           <a class="nav-link" href="biblioteca.html"><img src="icons.svg/biblioteca.svg" alt=""> Tu biblioteca</a>
         </div>
-        <div class="col">
+        <div class="col"> 
           <a class="nav-link active" href="registrate.html"><img src="icons.svg/registrate.svg" alt=""> Regístrate</a>
         </div>
         <div class="col">
@@ -38,7 +60,7 @@
       </div>
     </div>
   </main>
-  <form class="registro" method="post">
+  <form class="registro" method="POST">
     <div class="form-group">
       <label for="name">Nombre o nickname</label>
       <input type="name" class="form-control" id="name" placeholder="Juan el bandido" required>

@@ -134,6 +134,66 @@ option {
     background-color: #d27a5c;
 }
 
+/*----------------------INICIO DE SESIÓN----------------------*/
+.fondoInicioSesion {
+    background-image: url(images/inicioSesion.jpeg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-color: #443f41;
+}
+
+.h1inicioSesion {
+    color: var(--color-white);
+    padding: 2%;
+    text-align: center;
+}
+
+.menuInicioSesion {
+    color: var(--color-white);
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.container-formInicioSesion {
+    border: 3px solid var(--color-grey);
+    border-radius: 10px;
+    margin: 4.5% 33%;
+    padding: 2%;
+    background-color: #fefce665;
+    box-shadow: 5px 5px 5px var(--color-grey);
+}
+
+.formInicioSesion {
+    color: var(--color-grey);
+    font-weight: bold;
+}
+
+.formInicioSesion h2 {
+    color: var(--color-grey);
+    font-size: 40px;
+    text-align: center;
+}
+
+.sinCuenta {
+    color: var(--color-grey) !important;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 25%;
+}
+
+.sinCuenta a {
+    color: var(--color-grey);
+    margin-left: 15%;
+    text-decoration: underline;
+}
+
+
+
+
+
 /*----------------------MESAS DE JUEGO----------------------*/
 .fondoMesasJuego{
     background-image: url(images/fondoMesasJuego.jpeg);
